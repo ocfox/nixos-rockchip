@@ -17,14 +17,7 @@ jobs:
       matrix:
         package:
         - kernel_linux_6_1_rockchip
-        - kernel_linux_6_3_rockchip
-        - kernel_linux_6_3_pinetab
-        - uBootPineTab2
-        - uBootQuartz64A
-        - uBootQuartz64B
-        - uBootSoQuartzModelA
-        - uBootSoQuartzCM4IO
-        - uBootSoQuartzBlade
+        - uBootKing3399
     runs-on: ubuntu-latest
     steps:
     - name: Free disk space
@@ -113,16 +106,7 @@ jobs:
     strategy:
       matrix:
         board:
-        - Quartz64A
-        - Quartz64B
-        - SoQuartzModelA
-        - SoQuartzCM4
-        - SoQuartzBlade
-        - Rock64
-        - RockPro64
-        - ROCPCRK3399
-        - PinebookPro
-        - PineTab2
+        - king3399
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
