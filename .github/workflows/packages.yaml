@@ -9,14 +9,7 @@ jobs:
       matrix:
         package:
         - kernel_linux_6_1_rockchip
-        - kernel_linux_6_3_rockchip
-        - kernel_linux_6_3_pinetab
-        - uBootPineTab2
-        - uBootQuartz64A
-        - uBootQuartz64B
-        - uBootSoQuartzModelA
-        - uBootSoQuartzCM4IO
-        - uBootSoQuartzBlade
+        - uBootKing3399
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
